@@ -1,0 +1,5 @@
+Flask
+Flask-CORS
+google-generativeai
+python-dotenv
+psycopg2-binary
