@@ -1,62 +1,62 @@
-Codexia - Tu Tutor de Programación Personal con IA
-Codexia es una aplicación de tutoría de programación impulsada por la inteligencia artificial de Google Gemini. Actúa como un tutor personal que te ayuda a aprender Python de forma socrática y contextualizada. El tutor recuerda tus sesiones anteriores, identifica tus puntos débiles y adapta la conversación para ofrecerte una experiencia de aprendizaje personalizada y efectiva.
+✨ Codexia: Tu Tutor de Programación Personal con IA ✨
+¡Bienvenido a Codexia! 👋 Este es tu tutor de programación personal, impulsado por la increíble inteligencia artificial de Google Gemini. Piensa en él como un amigo que te ayuda a aprender Python de una manera socrática y súper contextualizada. La mejor parte es que el tutor recuerda tus conversaciones anteriores, identifica tus puntos débiles y adapta la charla para que tu aprendizaje sea más divertido y eficaz.
 
-El proyecto está diseñado con una arquitectura de backend y frontend separada, lo que permite un despliegue modular y flexible.
+El proyecto está diseñado con una arquitectura de backend y frontend separada. ¡Esto lo hace modular y muy fácil de mantener! 😉
 
-Características
-Tutoría Contextualizada: Codexia utiliza el historial de tus sesiones anteriores (almacenado en PostgreSQL) para adaptar la conversación y repasar conceptos clave.
+🚀 Características que te encantarán
+Tutoría Contextualizada: Usamos un historial de tus sesiones (guardado en PostgreSQL) para que el tutor sepa exactamente dónde te quedaste y qué necesitas reforzar. ¡Nunca más te sentirás perdido!
 
-Aprendizaje Socrático: El tutor no te da las respuestas directamente, sino que te guía con preguntas para que descubras la solución por ti mismo.
+Aprendizaje Socrático: El tutor no te dará las respuestas de inmediato. En cambio, te guiará con preguntas inteligentes para que descubras las soluciones por ti mismo. ¡Así el conocimiento se te queda grabado! 🧠
 
-Seguimiento del Progreso: Cada sesión se resume y se guarda en una base de datos para que puedas llevar un registro de los temas cubiertos y tus áreas de mejora.
+Seguimiento del Progreso: Cada sesión se resume y se guarda en una base de datos para que puedas ver tu progreso y los temas que has dominado. ¡Es como tu propio diario de aprendizaje!
 
-Backend Robusto: Desarrollado con Flask, PostgreSQL y la API de Google Gemini.
+Backend Robusto: Todo el poder de la IA reside en el backend, construido con Flask, PostgreSQL y la API de Google Gemini. ¡Es la magia detrás de la cortina!
 
-Despliegue en la Nube: El backend de la aplicación está desplegado en la plataforma Render.
+Despliegue en la Nube: El backend de la aplicación vive en la nube, gracias a Render. Esto significa que puedes acceder a él desde cualquier lugar. ☁️
 
-Tecnologías Utilizadas
+🛠️ Tecnologías Utilizadas
 Backend:
 
-Python: Lenguaje de programación principal.
+Python 🐍: ¡El lenguaje principal de la magia!
 
-Flask: Micro-framework web para la API.
+Flask: Un micro-framework ligero y poderoso para nuestra API.
 
-Gunicorn: Servidor de producción para el despliegue.
+Gunicorn: Nuestro servidor de producción, el que mantiene todo funcionando sin problemas.
 
-Google Gemini API: Para la generación de texto y la lógica del tutor.
+Google Gemini API: El cerebro de nuestro tutor. 🤖
 
-psycopg2: Adaptador de PostgreSQL para Python.
+psycopg2: Para hablar con nuestra base de datos PostgreSQL.
 
-python-dotenv: Para la gestión de variables de entorno.
+python-dotenv: Mantiene nuestras claves de API y configuraciones seguras. 🔐
 
 Frontend:
 
-HTML, CSS, JavaScript: Para la interfaz de usuario.
+HTML, CSS, JavaScript: La cara bonita de la aplicación, con la que interactúas todos los días. 🎨
 
 Base de Datos:
 
-PostgreSQL: Para almacenar el historial de las sesiones.
+PostgreSQL: Nuestro baúl de tesoros, donde guardamos el historial de tus sesiones. 🗄️
 
-Cómo Usar la Aplicación
-Para usar Codexia, simplemente abre el archivo frontend/index.html en tu navegador. El frontend se conectará automáticamente al backend desplegado en Render.
+🎮 Cómo Usar la Aplicación
+¡Es súper fácil! Solo necesitas abrir el archivo frontend/index.html en tu navegador. El frontend ya sabe cómo encontrar el backend en Render.
 
-Abre el archivo index.html en tu navegador.
+Abre el archivo index.html en tu navegador favorito.
 
-Haz clic en el botón "Nueva Sesión" para empezar.
+Haz clic en el botón "Nueva Sesión" para empezar la aventura. 🚀
 
-Comienza a chatear con el tutor de IA sobre cualquier tema de Python que quieras aprender.
+¡Empieza a chatear! El tutor de IA está listo para ayudarte con cualquier tema de Python.
 
-Configuración del Entorno Local
-Si deseas ejecutar el proyecto localmente para desarrollo, sigue estos pasos:
+💻 Configuración del Entorno Local (para desarrolladores)
+Si eres un aventurero y quieres ejecutar el proyecto en tu propia máquina, sigue estos sencillos pasos:
 
-Prerrequisitos
+⚙️ Prerrequisitos
 Python 3.x
 
 Git
 
 PostgreSQL
 
-Instalación
+📦 Instalación
 Clona el repositorio:
 
 git clone https://github.com/Marcosnapo/codexia-tutoria-ia.git
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 
 Configura las variables de entorno:
 
-Crea un archivo llamado .env en la carpeta backend.
+Crea un archivo .env en la carpeta backend.
 
 Añade tus claves y el enlace de la base de datos (puedes usar un servidor de PostgreSQL local o el mismo de Render):
 
@@ -89,12 +89,12 @@ Abre el Frontend:
 
 Ve a la carpeta frontend.
 
-Modifica el archivo index.html para que const backendUrl apunte a http://127.0.0.1:5000.
+Importante: Modifica index.html para que const backendUrl apunte a http://127.0.0.1:5000.
 
 Abre el archivo index.html en tu navegador.
 
-Despliegue en Render
-El backend de este proyecto está desplegado en Render. La configuración para un despliegue continuo es la siguiente:
+☁️ Despliegue en Render
+El backend de este proyecto está listo para desplegarse en Render. La configuración que necesitas es:
 
 Root Directory: backend
 
@@ -102,10 +102,10 @@ Build Command: pip install -r requirements.txt
 
 Start Command: gunicorn --bind 0.0.0.0:$PORT app:app
 
-Las variables de entorno GEMINI_API_KEY y DATABASE_URL deben ser configuradas en la sección de Environment de Render.
+Recuerda configurar las variables de entorno GEMINI_API_KEY y DATABASE_URL directamente en la sección Environment de Render.
 
-Contacto
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de GitHub.
+🤝 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de GitHub. ¡Nos encanta saber de ti!
 
-Licencia
-Este proyecto está bajo la Licencia MIT.
+📜 Licencia
+Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo!
